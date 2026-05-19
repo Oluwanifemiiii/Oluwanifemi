@@ -26,19 +26,27 @@ export default function Nav({ page, onNavigate }) {
           style={{ cursor: "pointer" }}
         >
           <span className="mark">
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M5 8 l4 8 l3 -8 l3 8 l4 -8" />
-            </svg>
+            <img src="/favicon.svg" alt="logo" width="14" height="14" />
           </span>
           <span>Oluwanifemi Ipaye</span>
           <span className="suffix">/+2348021351536</span>
         </a>
 
         <div className={`nav-links ${open ? "open" : ""}`}>
-          <a onClick={() => go("home", "#about")}  className={page === "home" ? "" : ""}>About</a>
-          <a onClick={() => go("home", "#certs")}  >Certifications</a>
-          <a onClick={() => go("projects")}         className={page === "projects" ? "active" : ""}>Projects</a>
-          <a onClick={() => go("home", "#contact")} >Contact</a>
+          <a
+            onClick={() => go("home", "#about")}
+            className={page === "home" ? "" : ""}
+          >
+            About
+          </a>
+          <a onClick={() => go("home", "#certs")}>Certifications</a>
+          <a
+            onClick={() => go("projects")}
+            className={page === "projects" ? "active" : ""}
+          >
+            Projects
+          </a>
+          <a onClick={() => go("home", "#contact")}>Contact</a>
         </div>
 
         <div className="nav-actions">
