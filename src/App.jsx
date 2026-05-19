@@ -1,5 +1,5 @@
 import { useState, useCallback } from "react";
-import "./app.css";
+import "./App.css";
 
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
