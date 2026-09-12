@@ -1,4 +1,3 @@
-import Mascot from "../components/Mascot";
 import Icon from "../components/Icon";
 import Thumb from "../components/Thumb";
 import ContactSection from "../components/ContactSection";
@@ -34,7 +33,7 @@ function Hero({ onNavigate }) {
           <div>
             <div className="hero-meta">
               <span className="mono-tag">
-                <span className="pulse"></span>open to work · 2026
+                <span className="pulse"></span>open to work
               </span>
               <span className="div"></span>
               <span>Lagos, NG · UTC+1</span>
@@ -48,7 +47,7 @@ function Hero({ onNavigate }) {
             </h1>
 
             <p className="hero-lede">
-              I'm <b>Oluwanifemi Ipaye</b> — a fullstack developer (and aspiring cloud engineer)
+              I'm <b>Oluwanifemi Ipaye</b>, a fullstack developer (and aspiring cloud engineer)
               who writes React + Node, sweats the details, and ships things you can actually use.
             </p>
 
@@ -77,7 +76,9 @@ function Hero({ onNavigate }) {
               <div className="frame-meta">
                 
               </div>
-              <div className="mascot"><Mascot /></div>
+              <div className="mascot">
+                <img src="/nifemi.jpg" alt="Oluwanifemi Ipaye" />
+              </div>
             </div>
           </div>
         </div>
@@ -102,10 +103,9 @@ function About() {
   return (
     <section id="about">
       <div className="wrap">
-        <SectNum n="01" label="about" />
         <div className="section-head">
           <h2>
-            Half engineer, half designer — and{" "}
+            Half engineer, half designer and{" "}
             <em className="serif">fully obsessed</em> with the details people notice.
           </h2>
         </div>
@@ -115,13 +115,13 @@ function About() {
             <div className="card3d about-card tilt-target">
               <p>
                 I write React + TypeScript on the front, Node.js + MySQL / Supabase on the back,
-                and I've recently been wandering into cloud-engineering territory — picking up Oracle
+                and I've recently been wandering into cloud-engineering territory, picking up Oracle
                 Cloud and Google Cloud along the way.
               </p>
               <p>
                 I've shipped marketplaces, hotel booking flows, an airline marketing site, and an
                 event-planning portfolio for paying clients. The thread connecting them all: a UI that
-                feels <em className="serif">considered</em> — micro-interactions, typography, and the
+                feels <em className="serif">considered</em>; micro-interactions, typography, and the
                 small moments most folks rush past.
               </p>
               <p>
@@ -157,7 +157,7 @@ function About() {
             <div className="now-card">
               <h4>currently</h4>
               <p>
-                Building <b>Rewa</b> — an Aso Ebi marketplace — and working through the
+                Building <b>Rewa</b> — an Aso Ebi marketplace, and working through the
                 Google Cloud Security certificate.
               </p>
               <div className="now-pills">
@@ -181,10 +181,9 @@ function Certs() {
   return (
     <section id="certs">
       <div className="wrap">
-        <SectNum n="02" label="certifications" />
         <div className="section-head">
           <h2>Papers worth <em className="serif">framing</em>.</h2>
-          <p className="lede">Cloud engineering is the long game — these are the first two pages.</p>
+          <p className="lede">Cloud engineering is the long game. These are the first two pages.</p>
         </div>
 
         <div className="certs-grid">
@@ -229,14 +228,13 @@ function ProjectsPreview({ onNavigate }) {
   return (
     <section id="projects">
       <div className="wrap">
-        <SectNum n="03" label="selected work" />
         <div
           className="section-head"
           style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "flex-end", flexWrap: "wrap", gap: 18, maxWidth: "none" }}
         >
           <div style={{ display: "flex", flexDirection: "column", gap: 8, maxWidth: 600 }}>
             <h2>Things I've <em className="serif">shipped</em> lately.</h2>
-            <p className="lede">A small slice — see the full list for context, stack notes, and links.</p>
+            <p className="lede">A small slice. See the full list for context, stack notes, and links.</p>
           </div>
           <button className="btn ghost" onClick={() => onNavigate("projects")}>
             All projects <Icon name="arrow" size={16} />
@@ -251,7 +249,6 @@ function ProjectsPreview({ onNavigate }) {
                 <div className="proj-body">
                   <div className="head">
                     <h3>{p.title}</h3>
-                    <span className="mono">N° {String(i + 1).padStart(2, "0")}</span>
                   </div>
                   <p>{p.short}</p>
                   <div className="proj-tags">

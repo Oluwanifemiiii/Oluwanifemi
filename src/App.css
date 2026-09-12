@@ -409,7 +409,11 @@ section { padding: 40px 0; position: relative; }
   display: grid; place-items: center;
   animation: bob 6s ease-in-out infinite; z-index: 2;
 }
-.mascot-stage .mascot svg { width: 78%; max-width: 320px; }
+.mascot-stage .mascot img {
+  width: 78%; max-width: 320px; aspect-ratio: 1 / 1;
+  border-radius: 50%; object-fit: cover;
+  border: 2px solid var(--ink); box-shadow: var(--shadow-2);
+}
 @keyframes bob {
   0%, 100% { transform: translateY(0); }
   50%       { transform: translateY(-10px); }

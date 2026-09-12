@@ -14,7 +14,6 @@ export default function ContactSection() {
           <div>
             <div className="sect-num" style={{ marginBottom: 14 }}>
               <span className="sn-arrow"></span>
-              <b>05</b><span>/</span><span>contact</span>
             </div>
             <h2>
               Got an idea?<br />
@@ -22,7 +21,7 @@ export default function ContactSection() {
             </h2>
             <p>
               Open to fullstack roles, freelance builds, and cloud-engineering collabs.
-              I usually reply within a day — sometimes less if it's interesting.
+              I usually reply within a day... sometimes less if it's interesting.
             </p>
           </div>
 
